@@ -49,6 +49,7 @@
     width: 12rem;
     height: 20rem;
     perspective: 1000px;
+    margin: 1%;
   }
   .flip-card-inner {
     position: relative;
@@ -112,6 +113,7 @@
 .flip-card-back {
     color: white;
     transform: rotateY(180deg);
+    
   }
 
 
