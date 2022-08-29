@@ -1,0 +1,47 @@
+<section>
+    <div class="container-fluid">
+        <div class="row row-justify-center">
+            <div class="flip-card" style="margin: 1%;" *ngFor="let pro of allProduct">
+                <div class="flip-card-inner border-card">
+                    <!-- front card include image ,slider , title ,rate , price ,and count-->
+                  <div class="flip-card-front border-card base-background-color">
+                    <!-- image box -->
+                    <div class="box-image">
+                        <img src="{{pro.image}}" alt="Prouduct" class="border-card image-card">
+                        <div  class="box-slider">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!-- end of image box -->
+                       <!-- front card body -->
+                    <div class="card-body">
+                        <h5 class="title-front-card">{{pro.title}}</h5>
+                        <div class="row row-justify-start rate-box" *ngIf="pro.rating">
+                            <span class="count-text">$ {{pro.rating.count}}</span>
+                            <span class="font-small">{{pro.rating.rate}} </span>
+                        </div>
+
+                    </div>
+                       <!-- end of front card body -->
+                    
+                  </div>
+                   <!-- back card include option for edit, Availability ,Availability ,Make private , and delete -->
+                  <div class="flip-card-back border-card base-background-color">
+                    <div class="row row-justify-start option-of-card" >
+                        <p class="p-base color-base"> <i class="fa fa-pencil-square-o " aria-hidden="true"></i><span>Edit</span></p>
+                        <p class="p-base color-base" > <i class="fa fa-calendar" aria-hidden="true"></i><span>Availability</span></p>
+                        <p class="p-base color-base" > <i class="fa fa-lock" aria-hidden="true"></i><span>Make private</span></p>
+                        <p class="p-base color-base-delet" > <i class="fa fa-trash-o color-base-delet" aria-hidden="true" ></i> <span>Delete</span></p>
+
+                    </div>
+                  </div>
+                   <!--end of back card  -->
+
+                </div>
+              </div>
+        
+        </div>
+
+    </div>
+      
+</section>

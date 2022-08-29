@@ -1,0 +1,117 @@
+.row-justify-center{
+    justify-content: center;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+    position: relative;
+    word-wrap: break-word;
+}
+.image-card{
+    width:100%;
+    height:12rem;
+    object-fit: contain;
+}
+.border-card{
+    border-radius: 5%;
+}
+.base-background-color{
+    background-color: #fff;
+}
+.font-small{
+    font-size: 0.7rem;
+    padding: 3%;
+    color:#591FF8;
+}
+.p-base{
+    width: 100%;
+    margin: 0;
+    font-weight: 100;
+    i{
+      padding: 0.4rem;     
+    }
+    i , span{
+        cursor: pointer;
+        z-index: 9;
+    }
+
+}
+.color-base{
+    color:#000;
+}
+.color-base-delet{
+    color: #FF0060;
+   }
+
+//card 
+.flip-card {
+    background-color: transparent;
+    width: 12rem;
+    height: 20rem;
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .box-image{
+    position:relative ;
+  }
+  .box-slider{
+    background-color: #F4F4F4; 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  .title-front-card{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+ .row-justify-start{
+    justify-content: flex-start;
+ }
+ .rate-box{
+    margin:auto ; 
+    align-items: baseline;  
+     margin-top: 2rem;
+ }
+ .count-text{
+    background-image: linear-gradient(to right, #2D1996 , #591FF8);
+    padding: 3%;
+    width: 29%;
+    border-radius: 8px;
+    color: #fff;font-size: 0.8rem;
+    font-weight: bold;
+ }
+ .option-of-card{
+    margin: auto;
+    height: 100%;
+    align-content: center;   
+    text-align: left;
+    margin-left: 22%;
+ }
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
