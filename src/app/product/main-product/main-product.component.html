@@ -1,13 +1,13 @@
 <section>
     <div class="container-fluid">
         <div class="row row-justify-center">
-            <div class="flip-card"  *ngFor="let pro of allProduct">
+            <div class="flip-card"  *ngFor="let product of allProduct">
                 <div class="flip-card-inner border-card">
                     <!-- front card include image ,slider , title ,rate , price ,and count-->
                   <div class="flip-card-front border-card base-background-color">
                     <!-- image box -->
                     <div class="box-image" >
-                        <img src="{{pro.image}}" alt="Prouduct" class="border-card image-card">
+                        <img src="{{product.image}}" alt="Prouduct" class="border-card image-card">
                         <div  class="box-slider">
                             <i class="fa fa-sliders" aria-hidden="true"></i>
                         </div>
@@ -15,10 +15,10 @@
                     <!-- end of image box -->
                        <!-- front card body -->
                     <div class="card-body">
-                        <h5 class="title-front-card">{{pro.title}}</h5>
+                        <h5 class="title-front-card">{{product.title}}</h5>
                         <div class="row row-justify-start rate-box">
-                            <span class="count-text">$ {{pro.price}}</span>
-                            <span class="font-small ">{{pro.category}} </span>
+                            <span class="count-text">$ {{product.price}}</span>
+                            <span class="font-small ">{{product.category}} </span>
 
                         </div>
 
