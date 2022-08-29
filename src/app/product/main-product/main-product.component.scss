@@ -23,25 +23,6 @@
     padding: 3%;
     color:#591FF8;
 }
-.p-base{
-    width: 100%;
-    margin: 0;
-    font-weight: 100;
-    i{
-      padding: 0.4rem;     
-    }
-    i , span{
-        cursor: pointer;
-        z-index: 9;
-    }
-
-}
-.color-base{
-    color:#000;
-}
-.color-base-delet{
-    color: #FF0060;
-   }
 
 //card 
 .flip-card {
@@ -78,9 +59,9 @@
     background-color: #F4F4F4; 
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 8px;
     border-radius: 50%;
-    padding: 3px;
+    padding: 4%;
   }
   .title-front-card{
     text-overflow: ellipsis;
@@ -117,3 +98,25 @@
   }
 
 
+  .p-base{
+    width: 100%;
+    margin: 0;
+    font-weight: 100;
+    i{
+      padding: 0.4rem;     
+    }
+    i , span{
+        cursor: pointer;
+        z-index: 9;
+    }
+
+}
+.color-base{
+    color:#000;
+}
+.color-base-delet{
+    color: #FF0060;
+   }
+.options{
+  padding: 0;
+}

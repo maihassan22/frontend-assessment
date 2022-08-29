@@ -18,7 +18,8 @@
                         <h5 class="title-front-card">{{pro.title}}</h5>
                         <div class="row row-justify-start rate-box">
                             <span class="count-text">$ {{pro.price}}</span>
-                            <span class="font-small " >inc.VAT </span>
+                            <span class="font-small ">{{pro.category}} </span>
+
                         </div>
 
                     </div>
@@ -28,10 +29,30 @@
                    <!-- back card include option for edit, Availability ,Availability ,Make private , and delete -->
                   <div class="flip-card-back border-card base-background-color">
                     <div class="row row-justify-start option-of-card" >
-                        <p class="p-base color-base"> <i class="fa fa-pencil-square-o " aria-hidden="true"></i><span>Edit</span></p>
+                        <ul class="options">
+                            <li>
+                                <p class="p-base color-base"> <i class="fa fa-pencil-square-o " aria-hidden="true"></i><span>Edit</span></p>
+
+                            </li>
+                            <li>
+                                <p class="p-base color-base" > <i class="fa fa-calendar" aria-hidden="true"></i><span>Availability</span></p>
+
+                            </li>
+
+                            <li>
+                                <p class="p-base color-base" > <i class="fa fa-lock" aria-hidden="true"></i><span>Make private</span></p>
+
+                            </li>
+                            <li>
+                                <p class="p-base color-base-delet" > <i class="fa fa-trash-o color-base-delet" aria-hidden="true" ></i> <span>Delete</span></p>
+
+                            </li>
+ 
+                        </ul>
+                        <!-- <p class="p-base color-base"> <i class="fa fa-pencil-square-o " aria-hidden="true"></i><span>Edit</span></p>
                         <p class="p-base color-base" > <i class="fa fa-calendar" aria-hidden="true"></i><span>Availability</span></p>
                         <p class="p-base color-base" > <i class="fa fa-lock" aria-hidden="true"></i><span>Make private</span></p>
-                        <p class="p-base color-base-delet" > <i class="fa fa-trash-o color-base-delet" aria-hidden="true" ></i> <span>Delete</span></p>
+                        <p class="p-base color-base-delet" > <i class="fa fa-trash-o color-base-delet" aria-hidden="true" ></i> <span>Delete</span></p> -->
 
                     </div>
                   </div>
